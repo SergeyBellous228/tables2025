@@ -5,13 +5,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace tables2025
+namespace EP_P32.DAL
 {
-    internal class AppDbContext : DbContext
+    public class AppDbContext : DbContext
     {
         private string _connectionString => "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Database;Integrated Security=True;Connect Timeout=30;";
 
         public DbSet<Student> Students { get; set; }
+
+        public DbSet<Author> Authors { get; set; }
+
+        public DbSet<Book> Books { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

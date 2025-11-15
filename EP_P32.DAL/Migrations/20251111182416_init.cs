@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace tables2025.Migrations
+namespace EP_P32.DAL.Migrations
 {
     /// <inheritdoc />
     public partial class init : Migration

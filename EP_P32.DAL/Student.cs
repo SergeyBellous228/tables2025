@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace tables2025
+namespace EP_P32.DAL
 {
     public class Student
     {
